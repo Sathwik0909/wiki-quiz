@@ -16,7 +16,8 @@ import {
 import { motion, AnimatePresence } from 'framer-motion';
 
 // eslint-disable-next-line no-undef
-const API_BASE = process.env.REACT_APP_API_URL;
+const API_BASE =  import.meta.env.REACT_APP_API_URL;
+
 
 function App() {
   const [activeTab, setActiveTab] = useState('generate');
